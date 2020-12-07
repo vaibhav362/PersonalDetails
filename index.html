@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Internship Website</title>
+		<link rel="stylesheet" type= "text/css"href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="profile">
+			<img src="vaibhav.jpeg" class="center" >
+			<h2>VAIBHAV DILIP WAGHE</h2>
+			<p>Mumbai, Maharastra</p>
+			<p>Electronics Engineer | Kabaddi Player</p>
+		</div>
+
+
+		<li><button class="tablink" onclick="openPage('Educational Details', this, 'green')">Educational Details</button></li>
+		<li><button class="tablink" onclick="openPage('Skills', this, 'green')">Skills</button></li>
+		<li><button class="tablink" onclick="openPage('Personal Information', this, 'green')">Personal Information</button></li>
+		<li><button class="tablink" onclick="openPage('Contact', this, 'green')">Contact</button></li>
+
+
+		<div id="Educational Details" class="tabcontent">
+  			<h1>Educational Details</h1>
+  			<li><h5><u>SSC :</u></h5> </li>
+  			<li><h5>School Name: K.E.S.Vinayak Hari Paranjpe Vidya Mandir</h5> </li>
+  			<li><h5><b>Percentage: 81.80</b></h5> </li>
+  			<li><h5><b>Passing Year: 2015</b></h5> </li>
+			<br><br><br>
+
+			<li><h5><u>Diploma :</u> </h5></li>
+ 			<li><h5>Institute  Name: Institute of Petrochemical Engineering</h5> </li>
+			<li><h5><b>Branch: Electronics And Telecommunication Engineering</b></h5> </li>
+  			<li><h5><b>CGPA: 7.64 </b></h5> </li>
+  			<li><h5><b>Passing Year: 2018</b></h5> </li>
+			<br><br><br>
+
+  			<li><h5><u>B.Tech:</u></h5> </li>
+			<li><h5>Institute  Name: Sardar Patel Institute of Technology</h5> </li>
+			<li><h5><b>Branch: Electronics Engineering </b></h5> </li>
+  			<li><h5><b>CGPA: 7.02 </b></h5> </li>
+  			<li><h5><b>Passing Year: 2021</b></h5> </li>
+		</div>
+
+		<div id="Skills" class="tabcontent">
+  			<h1>Skills</h1>
+  			<h5><b>Software   :   </b> Proteus, Multisim, Eagle, Fusion 360</h5>
+  			<h5><b>Hardware   :   </b> Arduino, Microcontroller</h5>
+  			<h5><b>Web Language   :   </b>  HTML, CSS</h5>   
+		</div>
+
+		<div id="Personal Information" class="tabcontent">
+  			<h1>Personal Information</h1>
+  			<p>Further information about myself </p>
+			<li><h5><b>Nationality: Indian</b></h5> </li>
+			<li><h5><b>Date Of Birth: 31st Mar 2000</b></h5> </li>
+			<li><h5><b>Area of Interest: Fitness, Sports, Comdey Shows</b></h5> </li>
+		</div>
+
+		<div id="Contact" class="tabcontent">
+  			<h1>Contact</h1>
+  			<p>Vaibhav Waghe</p>
+   			<p>Mobile No : +91 8149161175</p>
+   			<p>Email id : vaibhavwaghe6@gmail.com <p>
+		</div>
+		<script>
+			function openPage(pageName,elmnt,color) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablink");
+			  for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].style.backgroundColor = "";
+			  }
+			document.getElementById(pageName).style.display = "block";
+			  elmnt.style.backgroundColor = color;
+			}
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			</script>
+	</body>
+
+</html>
+
